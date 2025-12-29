@@ -15,6 +15,19 @@ PRODUCT_MANUFACTURER := Nothing
 PRODUCT_MODEL := A059
 PRODUCT_NAME := lineage_asteroids
 
+#Lunaris Flags
+TARGET_USES_CORE_GAPPS := true
+WITH_BCR := true
+BYPASS_CHARGE_SUPPORTED := true
+LUNARIS_BUILD_TYPE := OFFICIAL
+
+# Signing
+PRODUCT_DEFAULT_DEV_CERTIFICATE := vendor/lunaris-priv/keys/releasekey
+
+#Maintainer flags
+PRODUCT_PROPERTY_OVERRIDES += \ 
+ro.paranoid.maintainer=RAYYAN
+
 PRODUCT_GMS_CLIENTID_BASE := android-nothing
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
