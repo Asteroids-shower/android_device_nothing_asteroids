@@ -7,13 +7,24 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit_only.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 $(call inherit-product, device/nothing/asteroids/device.mk)
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/clover/config/common_full_phone.mk)
 
 PRODUCT_BRAND := Nothing
 PRODUCT_DEVICE := asteroids
 PRODUCT_MANUFACTURER := Nothing
 PRODUCT_MODEL := A059
-PRODUCT_NAME := lineage_asteroids
+PRODUCT_NAME := clover_asteroids
+
+# Boot animation
+TARGET_BOOT_ANIMATION_RES := 1080
+
+# Clover Project Flags
+CLOVER_BUILDTYPE := OFFICIAL
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+TARGET_SUPPORTS_QUICK_TAP := true
+USE_PIXEL_CHARGER := true
+CLOVER_MAINTAINER := RAYYAN
 
 PRODUCT_GMS_CLIENTID_BASE := android-nothing
 
