@@ -31,3 +31,6 @@ remote_provisioning.hostname=remoteprovisioning.googleapis.com
 
 # Thermal
 persist.sys.sltntc.enable=1
+
+# Maintainer
+ro.paranoid.maintainer=Rayyan
